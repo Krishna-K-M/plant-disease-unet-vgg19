@@ -57,7 +57,7 @@ Install dependencies:
 ```{=html}
 <!-- -->
 ```
-    git clone https://github.com/your-username/plant-disease-unet-vgg19.git
+    git clone  https://github.com/Krishna-K-M/plant-disease-unet-vgg19.git
     cd plant-disease-unet-vgg19
 
 2.  Launch notebook
