@@ -41,6 +41,22 @@ focusing on infected regions.
     ├── README.md          # Documentation
 
 ------------------------------------------------------------------------
+## 📂 Dataset
+
+The dataset used for this project is publicly available:
+
+🔗 https://data.mendeley.com/datasets/744vznw5k2/4
+
+### 📌 Description
+- Contains tea leaf images with various diseases
+- Used for both segmentation and classification tasks
+
+### 📥 How to use
+1. Download the dataset from the above link
+2. Extract it into your project directory
+3. Update dataset paths in `App.ipynb` if required
+
+------------------------------------------------------------------------
 
 ## ⚙️ Requirements
 
