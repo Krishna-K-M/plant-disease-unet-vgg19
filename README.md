@@ -106,20 +106,6 @@ Install dependencies:
 
 ------------------------------------------------------------------------
 
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, open an issue first.
-
-------------------------------------------------------------------------
-
 ## 📜 License
 
 For academic and research purposes.
-
-------------------------------------------------------------------------
-
-## 🙌 Acknowledgements
-
--   TensorFlow / Keras
--   U-Net architecture
--   VGG19 (ImageNet)
