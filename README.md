@@ -1,125 +1,141 @@
-# 🌿 Plant Disease Detection and Classification using U-Net and VGG19
+# Tea Leaf Disease Detection and Classification using U-Net and VGG19
 
-## 📌 Overview
+## Overview
 
-An end-to-end deep learning pipeline for detecting and classifying plant
-diseases from leaf images. The project combines **U-Net** for
-segmentation and **VGG19** for classification to improve accuracy by
-focusing on infected regions.
+This project focuses on tea leaf disease detection and segmentation using a deep learning architecture that combines U-Net and VGG19. The model identifies diseased regions in tea leaf images using semantic segmentation techniques, helping improve disease monitoring in precision agriculture.
 
-------------------------------------------------------------------------
+The project was developed using TensorFlow/Keras and trained on annotated tea leaf disease datasets.
 
-## 🚀 Key Features
+---
 
--   Leaf disease **segmentation** using U-Net
--   Disease **classification** using transfer learning (VGG19)
--   Clean **notebook-based workflow** (App.ipynb)
--   Modular pipeline: preprocessing → segmentation → classification →
-    evaluation
+## Features
 
-------------------------------------------------------------------------
+- Tea leaf disease detection using deep learning
+- Semantic segmentation using U-Net
+- VGG19 pretrained encoder backbone
+- Image preprocessing and mask generation
+- Disease region localization
+- TensorFlow/Keras implementation
+- Google Colab compatible
 
-## 🧠 Architecture
+---
 
-### U-Net (Segmentation)
+## Technologies Used
 
--   Encoder--decoder with skip connections
--   Produces pixel-wise masks of infected regions
+- Python
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+- Matplotlib
+- Google Colab
 
-### VGG19 (Classification)
+---
 
--   Pretrained on ImageNet
--   Fine-tuned on plant disease data
--   Uses segmented outputs for better feature focus
+## Dataset
 
-------------------------------------------------------------------------
+This project uses the Tea Leaf Disease Dataset from Mendeley Data.
 
-## 📂 Project Structure
+Dataset Link:  
+https://data.mendeley.com/datasets/744vznw5k2/4
 
-    .
-    ├── App.ipynb          # Main implementation notebook
-    ├── README.md          # Documentation
+The dataset contains:
+- Tea leaf images
+- Disease masks
+- Segmentation annotations
 
-------------------------------------------------------------------------
+---
 
-## ⚙️ Requirements
+## Project Structure
+
+```text
+Tea-Leaf-Disease-detection-and-classification-using-U-Net-and-VGG19/
+│
+├── dataset/
+│   ├── images/
+│   └── masks/
+│
+├── model/
+├── outputs/
+├── src/
+│   └── App.ipynb
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Krishna-K-M/plant-disease-unet-vgg19.git
+```
 
 Install dependencies:
 
-    pip install numpy pandas matplotlib opencv-python tensorflow keras scikit-learn
-
-------------------------------------------------------------------------
-
-## ▶️ Usage
-
-1.  Clone the repo
-
-```{=html}
-<!-- -->
+```bash
+pip install -r requirements.txt
 ```
-    git clone https://github.com/your-username/plant-disease-unet-vgg19.git
-    cd plant-disease-unet-vgg19
 
-2.  Launch notebook
+---
 
-```{=html}
-<!-- -->
+## Running the Project
+
+Open Jupyter Notebook or Google Colab and run:
+
+```bash
+src/App.ipynb
 ```
-    jupyter notebook App.ipynb
 
-3.  Run cells sequentially
+---
 
-------------------------------------------------------------------------
+## Model Architecture
 
-## 🔄 Workflow
+This project uses:
 
-1.  Data loading & preprocessing\
-2.  Train/Load U-Net for segmentation\
-3.  Generate masks for images\
-4.  Train/Load VGG19 for classification\
-5.  Evaluate predictions
+- U-Net for semantic segmentation
+- VGG19 as the encoder backbone
+- Skip connections for spatial feature recovery
+- Pretrained ImageNet weights for feature extraction
 
-------------------------------------------------------------------------
+---
 
-## 📊 Outputs
+## Workflow
 
--   Segmented leaf images (masks)
--   Predicted disease labels
--   Performance metrics (accuracy/loss)
+1. Load tea leaf images and masks
+2. Preprocess and resize images
+3. Build U-Net with VGG19 encoder
+4. Train segmentation model
+5. Predict diseased regions
+6. Visualize segmented outputs
 
-------------------------------------------------------------------------
+---
 
-## 🎯 Applications
+## Output Samples
 
--   Precision agriculture
--   Early disease detection
--   Automated crop monitoring systems
+The model generates:
+- Original tea leaf image
+- Ground truth mask
+- Predicted segmented disease region
 
-------------------------------------------------------------------------
+Sample outputs can be found in the `outputs/` directory.
 
-## 🔮 Future Work
+---
 
--   Deploy as web app (Flask/Streamlit)
--   Real-time camera inference
--   Expand dataset & augmentations
--   Try EfficientNet/ViT
+## Future Improvements
 
-------------------------------------------------------------------------
+- Real-time disease detection
+- Mobile deployment
+- Multi-class segmentation
+- Web application integration
+- Higher accuracy optimization
 
-## 🤝 Contributing
+---
 
-Pull requests are welcome. For major changes, open an issue first.
+## Author
 
-------------------------------------------------------------------------
-
-## 📜 License
-
-For academic and research purposes.
-
-------------------------------------------------------------------------
-
-## 🙌 Acknowledgements
-
--   TensorFlow / Keras
--   U-Net architecture
--   VGG19 (ImageNet)
+Krishna K M
