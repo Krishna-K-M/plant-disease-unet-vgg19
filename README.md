@@ -55,8 +55,6 @@ Tea-Leaf-Disease-detection-and-classification-using-U-Net-and-VGG19/
 │   ├── images/
 │   └── masks/
 │
-├── model/
-├── outputs/
 ├── src/
 │   └── App.ipynb
 │
